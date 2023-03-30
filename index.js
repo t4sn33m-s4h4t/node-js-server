@@ -10,7 +10,7 @@ const authRoute = require("./routes/auth");
 const userRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
-PORT = 5000
+PORT = process.env.PORT || 5000
 dotenv.config();
 app.use(cors());
 app.use(express.json());
